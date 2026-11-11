@@ -358,6 +358,27 @@ def _dedupe_report(routes):
     return dropped
 
 
+def _resolve_now_groups(spec):
+    groups = CFG["round_trip_groups"]
+    spec = (spec or "").strip()
+    if not spec or spec.lower() == "all":
+        return set(groups)
+    if spec.lower() == "none":
+        return set()
+    hit, miss = set(), []
+    for w in (x.strip() for x in spec.split(",")):
+        if not w:
+            continue
+        m = [g for g in groups if g == w or g.startswith(w)]
+        if m:
+            hit.update(m)
+        else:
+            miss.append(w)
+    if miss:
+        raise SystemExit(f"不认识的组：{', '.join(miss)}\n可选：{', '.join(groups)}")
+    return hit
+
+
 def cmd_plan(args):
     routes = json.loads((STATE / "routes_visible.json").read_text(encoding="utf-8"))
     dropped = _dedupe_report(routes)
@@ -372,6 +393,11 @@ def cmd_plan(args):
 
     def is_cross(name):
         return rt_group.get(name) in cross_groups
+
+    # 关联路线默认全部 now 下发；用户说「不 now 下发」时用 --no-now 排除（可只排除某几组）
+    now_groups = _resolve_now_groups(args.now or "all")
+    if args.no_now:
+        now_groups -= _resolve_now_groups(args.no_now)
 
     seg_of = CFG["city_to_segment"]
     chuangxin = set(CFG["shanghai_chuangxin_routes"])
@@ -404,8 +430,8 @@ def cmd_plan(args):
         rest = [n for n in names if n not in rt_group]
         if rts:
             for n in rts:
-                # 跨城往返组同一辆车，但不设下发时间（先不排）
-                assign[n] = (vs[0], not is_cross(n))
+                # 关联路线同车；是否 now 下发由 --now 指定，默认不下发
+                assign[n] = (vs[0], rt_group[n] in now_groups)
             pool = vs[1:] or vs[:1]
         else:
             pool = vs
@@ -440,11 +466,11 @@ def cmd_plan(args):
                      f"{'立即' if x['dispatch'] else ''} | {x['group']} |")
     (STATE / "assign.md").write_text("\n".join(lines), encoding="utf-8")
 
-    print(f"路线 {len(rows)} 条 | 往返组 {sum(1 for x in rows if x['dispatch'])} 条\n")
+    print(f"路线 {len(rows)} 条 | 关联组 now 下发 {sum(1 for x in rows if x['dispatch'])} 条\n")
 
     rts = [x for x in rows if x["dispatch"] == "now"]
     if rts:
-        print("### 往返组（同一辆车 + 下发时间 now）")
+        print("### 关联路线（同一辆车 + 下发时间 now）")
         groups = {}
         for x in rts:
             groups.setdefault((x["group"], x["plate"], x["host"], x["driver"]), []).append(x["route"])
@@ -454,9 +480,9 @@ def cmd_plan(args):
             print(f"     {' / '.join(names)}")
         print()
 
-    cross_pending = [x for x in rows if is_cross(x["route"])]
+    cross_pending = [x for x in rows if x["group"] and x["dispatch"] != "now"]
     if cross_pending:
-        print("### 跨城路线（已排车，暂不下发）")
+        print("### 关联路线（已排车，本轮不下发）")
         groups = {}
         for x in cross_pending:
             groups.setdefault((x["group"], x["plate"], x["host"], x["driver"]), []).append(x["route"])
@@ -619,6 +645,10 @@ def main():
     p = sub.add_parser("plan", help="按路线+车辆生成分配方案并打印")
     p.add_argument("--no-refresh", action="store_true",
                    help="复用本地 vehicles.json，不去飞书现读")
+    p.add_argument("--now", default="",
+                   help="指定哪几组关联路线现在下发：all / none / 5.1,5.3（默认 all）")
+    p.add_argument("--no-now", default="",
+                   help="排除哪几组不下发：all / 5.4,5.5,5.6")
 
     f = sub.add_parser("fill", help="回填车辆与下发时间（需要 --yes）")
     f.add_argument("--yes", action="store_true")

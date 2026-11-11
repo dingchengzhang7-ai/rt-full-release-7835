@@ -1,0 +1,77 @@
+{
+  "task_url": "https://rt.momenta.works/micro_app_tbd/RtTask/detail/<TASK_ID>",
+  "pkg_keyword": "7835",
+  "pool": "HNP-组内组间",
+  "page_size": "100 / page",
+  "auth_state": "~/.claude/feishu/auth.json",
+  "rt_token_config": "~/.claude/skills/rt-base-board/config.json",
+  "vehicles_file": "vehicles.json",
+  "feishu": {
+    "host": "https://momenta.feishu.cn",
+    "cookie_file": "~/.claude/feishu/cookie.txt",
+    "app_token": "<FEISHU_APP_TOKEN>",
+    "table_id": "<FEISHU_TABLE_ID>",
+    "view_id": ""
+  },
+  "round_trip_groups": {
+    "5.1 深圳机场往返": [
+      "Shenzhen_LHUAS_CMA_UBS_009",
+      "Shenzhen_LHUAS_CMA_UBS_010"
+    ],
+    "5.2 金海园⇄创新港通勤": [
+      "Shanghai_Taunus_HWS_001",
+      "Shanghai_Taunus_HWS_002"
+    ],
+    "5.3 公司⇄广汽研究院": [
+      "Guangzhou_CMA_HEG_004",
+      "Guangzhou_HEU_001",
+      "Guangzhou_HEU_002",
+      "Guangzhou_HEU_003",
+      "Guangzhou_CMA_HEG_005"
+    ],
+    "5.4 芜湖⇄南京": [
+      "Wuhu_WHUAS_CMA_HWG_003",
+      "Wuhu_WHUAS_CMA_EXG_004",
+      "Wuhu_WHUAS_CMA_EXG_005",
+      "Wuhu_WHUAS_CMA_EXG_006",
+      "Wuhu_WHUAS_CMA_EXG_007",
+      "Wuhu_WHUAS_CMA_HWG_009"
+    ],
+    "5.5 武汉⇄南昌": [
+      "Wuhan_CMA_HWG_001",
+      "Nanchang_HWG_001R-002",
+      "Nanchang_JGANGS_HES_002",
+      "Nanchang_JGANGS_HES_004"
+    ],
+    "5.6 成都⇄重庆": [
+      "Chengdu_HWG_001",
+      "Chongqing_HWG_001",
+      "Chengdu_CMA_HEG_001",
+      "Chengdu_CMA_EEG_001"
+    ]
+  },
+  "city_to_segment": {
+    "芜湖": "芜湖&合肥&南京",
+    "广州": "广州",
+    "苏州": "苏州",
+    "北京": "北京",
+    "深圳": "深圳",
+    "杭州": "杭州",
+    "武汉": "武汉&南昌",
+    "重庆": "重庆&成都"
+  },
+  "shanghai_chuangxin_routes": [
+    "Shanghai_DJINS_CMA_HES_002",
+    "Shanghai_DJINS_CMA_HES_003",
+    "Shanghai_POI_HUU_352-1",
+    "Shanghai_POI_HUU_353-1",
+    "Shanghai_POI_HUU_360-1",
+    "Shanghai_Taunus_HWS_001",
+    "Shanghai_Taunus_HWS_002"
+  ],
+  "cross_city_groups": [
+    "5.4 芜湖⇄南京",
+    "5.5 武汉⇄南昌",
+    "5.6 成都⇄重庆"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "quanliangfaban7835skill",
+  "owner": {
+    "name": "Dingcheng Zhang"
+  },
+  "plugins": [
+    {
+      "name": "quanliangfaban7835skill",
+      "source": "./",
+      "description": "RT 全量发版套餐自动排车：dump 路线 → 出排车方案 → 确认后回填并调度（跨城组不下发）",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# 凭证与个人数据
+config.json
+auth.json
+cookie.txt
+env/
+vehicles.json
+vehicles.prev.json
+state/
+__pycache__/
+*.pyc

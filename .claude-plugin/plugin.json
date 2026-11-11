@@ -1,0 +1,10 @@
+{
+  "name": "quanliangfaban7835skill",
+  "version": "1.0.0",
+  "description": "RT 全量发版套餐自动排车：读取飞书安全员表与 RT 调度弹窗，按城市/资源池生成排车方案，确认后回填车辆与下发时间；跨城往返组只排车不下发。",
+  "author": {
+    "name": "Dingcheng Zhang"
+  },
+  "license": "MIT",
+  "keywords": ["rt", "schedule", "road-test", "feishu", "playwright"]
+}

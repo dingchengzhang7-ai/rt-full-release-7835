@@ -1,0 +1,326 @@
+[
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_HEG_001"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_HWG_002"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_HWG_003"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_EXG_004"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_EXG_005"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_EXG_006"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_EXG_007"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_HWG_009"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_CMA_HEG_010"
+ },
+ {
+  "template": "HNP发版套餐_芜湖（1000km）",
+  "route": "Wuhu_WHUAS_HWU_012"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_BYUNS_CMA_ZC_HES_002"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HES_001"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HES_002"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HES_003"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HES_004"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_BYUNS_CMA_HUS_001"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_BYUNS_CMA_HUS_002"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_BYUNS_CMA_HUS_003"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_CMA_HEG_004"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HEU_001"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HEU_002"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_HEU_003"
+ },
+ {
+  "template": "HNP发版套餐_广州（1000km)",
+  "route": "Guangzhou_CMA_HEG_005"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_DJINS_CMA_HES_002"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_DJINS_CMA_HES_003"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_POI_HUU_352-1"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_POI_HUU_353-1"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_Taunus_HWS_001"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_Taunus_HWS_002"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_Harz_HES_002"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_Harz_HWS_001"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_POI_HUU_351-1"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_Taunus_CMA_HES_001"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_POI_HUU_355-1"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_QWANGS_PDX_HES_002"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_POI_HUU_360-1"
+ },
+ {
+  "template": "上海发版套餐(HNP_1000km)",
+  "route": "Shanghai_POI_HUU_359-2"
+ },
+ {
+  "template": "HNP发版套餐_苏州(470km)",
+  "route": "Suzhou_POI_HUU_137-1"
+ },
+ {
+  "template": "HNP发版套餐_苏州(470km)",
+  "route": "Suzhou_POI_HUU_132-1"
+ },
+ {
+  "template": "HNP发版套餐_苏州(470km)",
+  "route": "Suzhou_POI_HUU_139-1"
+ },
+ {
+  "template": "HNP发版套餐_苏州(470km)",
+  "route": "Suzhou_EXSPL_002"
+ },
+ {
+  "template": "HNP发版套餐_苏州(470km)",
+  "route": "Suzhou_POI_HUU_135-1"
+ },
+ {
+  "template": "HNP发版套餐_北京(500km)",
+  "route": "Beijing_POI_HUG_124-1"
+ },
+ {
+  "template": "HNP发版套餐_北京(500km)",
+  "route": "Beijing_POI_HUG_123-1"
+ },
+ {
+  "template": "HNP发版套餐_北京(500km)",
+  "route": "Beijing_HWETC_Zpf_002"
+ },
+ {
+  "template": "HNP发版套餐_北京(500km)",
+  "route": "Beijing_POI_HUG_091-1"
+ },
+ {
+  "template": "HNP发版套餐_北京(500km)",
+  "route": "Beijing_HESPL_010"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_CMA_HEG_003"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_HWETC_001"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_HES_003"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_CMA_UBS_009"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_CMA_UBS_010"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_HEG_009"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_CMA_HEG_016"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_CMA_HEG_002"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_HWU_003"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_HWETC_002"
+ },
+ {
+  "template": "HNP发版套餐_深圳(1100km)",
+  "route": "Shenzhen_LHUAS_CMA_HWG_001"
+ },
+ {
+  "template": "HNP发版套餐_杭州（533Km）",
+  "route": "Hangzhou_CMA_HES_001"
+ },
+ {
+  "template": "HNP发版套餐_杭州（533Km）",
+  "route": "Hangzhou_CMA_HES_003"
+ },
+ {
+  "template": "HNP发版套餐_杭州（533Km）",
+  "route": "Hangzhou_CMA_HEG_002"
+ },
+ {
+  "template": "HNP发版套餐_杭州（533Km）",
+  "route": "Hangzhou_CMA_HEG_003"
+ },
+ {
+  "template": "HNP发版套餐_杭州（533Km）",
+  "route": "Hangzhou_CMA_HEG_004"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_WDANGS_CMA_EXG_001"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_WDANGS_CMA_HEG_002"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_WDANGS_CMA_HEG_003"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_WDANGS_CMA_HEG_004"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_WDANGS_CMA_HEG_005"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_WDANGS_CMA_EXG_006"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Wuhan_CMA_HWG_001"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Nanchang_JGANGS_HES_002"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Nanchang_JGANGS_HES_004"
+ },
+ {
+  "template": "HNP发版套餐_武汉&南昌（1615Km）",
+  "route": "Nanchang_HWG_001R-002"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chongqing_BGANS_HES_001"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chongqing_BGANS_HES_002"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chongqing_BGANS_HES_003"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chongqing_BGANS_HES_004"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chongqing_HWG_001"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chengdu_CMA_EEG_001"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chengdu_CMA_HEG_001"
+ },
+ {
+  "template": "HNP发版套餐_重庆&成都（1356Km）",
+  "route": "Chengdu_HWG_001"
+ }
+]

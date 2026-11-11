@@ -100,9 +100,9 @@ python3 rt_sched.py fill --yes --limit 5
   ...
 
 车辆清单：刚从安全员表现读，42 台
-路线 71 条 | 往返组 23 条
+路线 71 条 | 关联组 now 下发 23 条   ← 71 只是本次示例，实际条数每次不同
 
-### 往返组（同一辆车 + 下发时间 now）
+### 关联路线（同一辆车 + 下发时间 now）
    5.4 芜湖⇄南京
      京AAD6889 LC6-EAW6079 张安全 — 6 条
      Wuhu_WHUAS_CMA_HWG_003 / Wuhu_WHUAS_CMA_EXG_004 / ...

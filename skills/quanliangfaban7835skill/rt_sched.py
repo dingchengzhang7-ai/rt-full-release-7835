@@ -389,12 +389,8 @@ def cmd_plan(args):
         vehicles = refresh_vehicles()
         print(f"车辆清单：刚从安全员表现读，{len(vehicles)} 台")
     rt_group = {r: g for g, rs in CFG["round_trip_groups"].items() for r in rs}
-    cross_groups = set(CFG.get("cross_city_groups") or [])
 
-    def is_cross(name):
-        return rt_group.get(name) in cross_groups
-
-    # 关联路线默认全部 now 下发；用户说「不 now 下发」时用 --no-now 排除（可只排除某几组）
+    # 关联路线（往返组）默认全部 now 下发；用户说「不 now 下发」时用 --no-now 排除
     now_groups = _resolve_now_groups(args.now or "all")
     if args.no_now:
         now_groups -= _resolve_now_groups(args.no_now)
@@ -430,16 +426,13 @@ def cmd_plan(args):
         rest = [n for n in names if n not in rt_group]
         if rts:
             for n in rts:
-                # 关联路线同车；是否 now 下发由 --now 指定，默认不下发
+                # 关联路线同车，下发时间 now
                 assign[n] = (vs[0], rt_group[n] in now_groups)
             pool = vs[1:] or vs[:1]
         else:
             pool = vs
         for i, n in enumerate(rest):
             assign[n] = (pool[i % len(pool)], False)
-
-    # 先排不跨城的，跨城的排后面（稳定排序）
-    order.sort(key=lambda x: is_cross(x[1]["name"]))
 
     rows = []
     for seg, r in order:
@@ -480,11 +473,11 @@ def cmd_plan(args):
             print(f"     {' / '.join(names)}")
         print()
 
-    cross_pending = [x for x in rows if x["group"] and x["dispatch"] != "now"]
-    if cross_pending:
+    held = [x for x in rows if x["group"] and x["dispatch"] != "now"]
+    if held:
         print("### 关联路线（已排车，本轮不下发）")
         groups = {}
-        for x in cross_pending:
+        for x in held:
             groups.setdefault((x["group"], x["plate"], x["host"], x["driver"]), []).append(x["route"])
         for (g, plate, host, driver), names in groups.items():
             print(f"   {g}")
